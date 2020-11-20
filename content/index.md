@@ -2,6 +2,10 @@
 Title: Home
 Description: This is our index page.
 Image: image/minbild_icon.png
+
+
+
+
 ---
 
 Hem-Sidan

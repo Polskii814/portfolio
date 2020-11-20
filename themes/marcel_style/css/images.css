@@ -1,5 +1,7 @@
 /* Img */
 
+
+
  img {
   float: left;
   border-radius: 25px;
@@ -43,4 +45,3 @@
         float: none;
         margin: 0 auto;
     }
-}
