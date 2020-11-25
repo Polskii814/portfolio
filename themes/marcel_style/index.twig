@@ -45,14 +45,13 @@
                        {% endfor %}
                    </ul>
             <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
-                <a href="{{ "index"|link }}">
                     <h1>{{ site_title }}</h1>
                     {{ pages["_meta"].meta.tagline|markdown }}
                 </a>
             </div>
             <img class="logo" aria-hidden="true">
                 <a href="{{ "index"|link }}">
-                    <img src="{{ base_url }}/image/programming.jpg" alt=""/>
+                    <img class="banner" src="{{ base_url }}/image/programming.jpg" alt=""/>
                 </a>
               </div>
         </div>
