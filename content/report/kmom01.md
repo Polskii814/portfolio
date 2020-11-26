@@ -44,3 +44,4 @@ Template: kmom
 <p>Det som är kursomentets TIL är nog hur GitHub-repon fungerar. Jag fick lära mig hur man gör ett nytt GitHub-repo från grunden genom att använda sig av terminalen samt hur man använder sig av kommandon som t.ex: "Git push", "git commit","git pull" samt hur man bildar tags för ett specifikt repo och hur man laddar upp det på själva hemsidan så att allting fungerar ihop på ett smidigt sätt.</p>
 
 </div>
+s
