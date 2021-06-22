@@ -17,10 +17,14 @@
         <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
 
+    {% if config.session.theme == "dark" %}
+      <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.min.css" type="text/css" />
+      <link rel="stylesheet" href="{{ theme_url }}/css/nav.css" type="text/css" />
+      <link rel="stylesheet" href="{{ theme_url }}/css/images.css" type="text/css" />
+    {% else %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" />
+    {% endif %}
 
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="{{ theme_url }}/css/nav.css" type="text/css" />
-    <link rel="stylesheet" href="{{ theme_url }}/css/images.css" type="text/css" />
 
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
@@ -45,14 +49,13 @@
                        {% endfor %}
                    </ul>
             <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
-
+              <img class="logo" src="{{ base_url }}/image/minbild_icon.png" alt=""/>
                     <h1>{{ site_title }}</h1>
                     {{ pages["_meta"].meta.tagline|markdown }}
                 </a>
             </div>
-            <img class="logo" aria-hidden="true">
                 <a href="{{ "index"|link }}">
-                    <img class="banner" src="{{ base_url }}/image/programming.jpg" alt=""/>
+                    <img class="banner" src="{{ base_url }}/image/sunset.jpg" alt=""/>
                 </a>
               </div>
         </div>

@@ -7,8 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
     "watch": "sass marcel_style/scss/style.scss marcel_style/css/style.css --no-source-map --watch",
-    "style": "sass marcel_style/scss/style.scss marcel_style/css/style.css --no-source-map",
-    "style-min": "sass marcel_style/scss/style.scss marcel_style/css/style.min.css --no-source-map --style compressed"
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-light": "sass marcel_style/scss/style.scss marcel_style/css/style.css --no-source-map",
+    "style-light-min": "sass marcel_style/scss/style.scss marcel_style/css/style.min.css --no-source-map --style compressed",
+    "style-dark": "sass marcel_style/scss/style-dark.scss marcel_style/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass marcel_style/scss/style-dark.scss marcel_style/css/style-dark.min.css --no-source-map --style compressed"
+
   },
   "keywords": [],
   "author": "",

@@ -20,11 +20,9 @@
     {% if config.session.theme == "dark" %}
       <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.min.css" type="text/css" />
       <link rel="stylesheet" href="{{ theme_url }}/css/nav.css" type="text/css" />
-      <link rel="stylesheet" href="{{ theme_url }}/css/images.css" type="text/css" />
     {% else %}
     <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" />
     {% endif %}
-
 
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
@@ -60,11 +58,23 @@
               </div>
         </div>
     </header>
-    <div class="main" role="main">
-        <div class="landingpage">
-      {{ content }}
-      </div>
+    <div class="main" id="main" role="main">
+        <div class="gallery">
+          {% for image in meta.images %}
+          <div>
+            <a href="{{ base_url }}/image/gallery/{{ image.url }}" target="_blank">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}&w=720">
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}">
+                  <source media="(min-width: 376px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}&w=667">
+                  <img src="{{ base_url }}/image/gallery/{{ image.url }}&w=100%" alt="{{ image.alt }}">
+                </picture>
+              </a>
+              </div>
+          {% endfor %}
+        </div>
     </div>
+
     <footer class="site-footer">
       <div class="social">
           <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
