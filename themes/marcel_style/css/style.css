@@ -12926,6 +12926,8 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
+  border-bottom: 0.3px solid black;
+  padding-bottom: 2em;
 }
 
 * {
@@ -12950,10 +12952,10 @@ body {
 
 /* Header */
 .site-header {
-  flex: auto;
-  background: rgb(53, 156, 74);
+  /*background: rgb(53,156,74);*/
   color: #2b2e30;
   padding: 0 2em;
+  flex: 0 0 auto;
 }
 
 .site-header a, .site-header a:visited {
@@ -12987,6 +12989,10 @@ body {
   display: inline-block;
   float: right;
   font-size: 2rem;
+}
+
+.webbplats {
+  width: 100%;
 }
 
 img, embed, object, video {
@@ -13173,7 +13179,11 @@ h1 {
 }
 
 .kmom-text h3 {
-  padding: 5em;
+  justify-self: center;
+}
+
+.kmom-text .table-responsive {
+  padding: 1em;
 }
 
 @media (max-width: 767px) {
@@ -13241,8 +13251,28 @@ img {
   max-width: 100%;
 }
 
+.site-header .logo {
+  float: right;
+  padding-bottom: 3em;
+  display: block;
+}
+
+.side-header {
+  background-color: #246b3c;
+}
+
+main h1 h2 {
+  border-bottom: 0.3px solid black;
+  padding-bottom: 1em;
+}
+
 body {
   border: solid black 5px;
+  background-color: #9e6b2e;
+}
+
+.social i, a {
+  color: black;
 }
 
 .embed-container {

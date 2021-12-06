@@ -22,6 +22,16 @@ img {
   display: block;
 }
 
+.side-header {
+  background-color: $accent-background-color;
+}
+
+
+ .main h1 {
+  border-bottom: 0.3px solid black;
+  padding-bottom: 1em;
+}
+
 
 body {
   border: solid $border-color 5px;

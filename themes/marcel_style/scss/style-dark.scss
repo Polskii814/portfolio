@@ -43,6 +43,11 @@ body {
   background-color: $background-color;
 }
 
+.main h1 {
+  border-bottom: 0.3px solid orangered;
+  padding-bottom: 2em;
+}
+
 .site-header {
   background: $accent-background-color;
   max-width: 100%;

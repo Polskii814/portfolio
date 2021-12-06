@@ -23,7 +23,7 @@ body {
 /* Header */
 
 .site-header {
-    background: rgb(53,156,74);
+    /*background: rgb(53,156,74);*/
     color: #2b2e30;
     padding: 0 2em;
     flex: 0 0 auto;
@@ -157,9 +157,7 @@ img, embed, object, video {
      font-weight: normal;
  }
 
- #nav a:hover, #nav-toggle:hover {
 
- }
 
  #nav-toggle {
      display: none;

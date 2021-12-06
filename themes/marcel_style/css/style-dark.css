@@ -12916,7 +12916,7 @@ readers do not read off random characters that represent icons */
 }
 
 * {
-  font-family: "Open sans";
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -12925,7 +12925,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open sans";
+  font-family: "Roboto", sans-serif;
+  border-bottom: 0.3px solid black;
 }
 
 * {
@@ -12950,10 +12951,10 @@ body {
 
 /* Header */
 .site-header {
-  flex: auto;
-  background: rgb(53, 156, 74);
+  /*background: rgb(53,156,74);*/
   color: #2b2e30;
   padding: 0 2em;
+  flex: 0 0 auto;
 }
 
 .site-header a, .site-header a:visited {
@@ -12989,6 +12990,14 @@ body {
   font-size: 2rem;
 }
 
+.webbplats {
+  width: 100%;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
 .image {
   display: block;
   margin: 0 auto;
@@ -13015,6 +13024,7 @@ body {
 
 .banner {
   width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -13168,7 +13178,11 @@ h1 {
 }
 
 .kmom-text h3 {
-  padding: 5em;
+  justify-self: center;
+}
+
+.kmom-text .table-responsive {
+  padding: 1em;
 }
 
 @media (max-width: 767px) {
@@ -13209,7 +13223,7 @@ h1 {
   }
 }
 .gallery {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -13233,11 +13247,30 @@ h1 {
 }
 
 .kmom-links {
-  border-color: #f0f0f0;
+  border-color: #d47f2a;
 }
 
 .kmom-box {
-  border-color: #f0f0f0;
+  border-color: #d47f2a;
+}
+
+.site-header a {
+  color: #f0f0f0;
+}
+
+.site-header a:hover {
+  color: #d47f2a;
+}
+
+body {
+  border: solid #d47f2a 5px;
+  background-color: #111010;
+}
+
+.site-header .logo {
+  float: right;
+  display: block;
+  padding-bottom: 3em;
 }
 
 .main {
@@ -13245,11 +13278,20 @@ h1 {
 }
 
 .site-header {
-  filter: grayscale(55%);
+  background: #246b3c;
+  max-width: 100%;
+}
+
+#nav a {
+  color: #f0f0f0;
+}
+
+#nav a:hover {
+  color: #d47f2a;
 }
 
 .site-footer {
-  filter: grayscale(55%);
+  background: #246b3c;
 }
 
 .banner {
@@ -13258,4 +13300,23 @@ h1 {
 
 img {
   max-width: 100%;
+  height: 100%;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

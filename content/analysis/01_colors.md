@@ -4,7 +4,6 @@ Template: analysis
 ---
 <h1>Analys av olika webbplatsers färgval</h1>
 
-
 <p>Uppgiften handlar om att genom ett specifikt och personligt urval välja tre olika slags webbsidor som visar upp ett särskilt val av design med hjälp av färger.</p>
 
 <h2>Urval</h2>
